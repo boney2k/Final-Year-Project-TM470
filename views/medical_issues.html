@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Issues</title>
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/my_diary.css" />
+  </head>
+  <body id="medical-issues">
+    <!-- Navigation bar container -->
+    <div id="navbar-container" aria-live="polite"></div>
+
+    <header>
+      <h1>Medical Issues</h1>
+    </header>
+
+    <main>
+      <section>
+        <form id="medicalIssuesForm">
+          <label for="medicalIssuesDate">Date:</label>
+          <input
+            type="date"
+            id="medicalIssuesDate"
+            name="medicalIssuesDate"
+            required
+          /><br /><br />
+          <label for="medicalIssuesTime">Time:</label>
+          <input
+            type="time"
+            id="medicalIssuesTime"
+            name="medicalIssuesTime"
+            required
+          /><br /><br />
+          <label for="medicalIssuesDescription">Description:</label>
+          <textarea
+            id="medicalIssuesDescription"
+            name="medicalIssuesDescription"
+            required
+          ></textarea
+          ><br /><br />
+          <button type="submit">Add Medical Issue</button>
+        </form>
+        <div id="medicalIssuesList">
+          <h3>Medical Issues List</h3>
+          <ul id="medicalIssuesItems"></ul>
+        </div>
+      </section>
+      <!-- Back to My Diary Button -->
+      <button id="backToDiary">Back to My Diary</button>
+    </main>
+
+    <script src="/js/diary_form_handler.js"></script>
+  </body>
+</html>

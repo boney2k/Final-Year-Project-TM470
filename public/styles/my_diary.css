@@ -1,0 +1,96 @@
+/* Diary Page Styles */
+
+/* Ensure consistency with global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional Styles for the Back to My Diary Button */
+#backToDiary {
+  background-color: #28a745; /* Green button color */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+#backToDiary:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Specific adjustments for individual pages */
+#fallsItems,
+#medicalIssuesItems,
+#gpVisitsItems,
+#hospitalVisitsItems {
+  list-style-type: none;
+  padding: 0;
+}
+
+#fallsItems li,
+#medicalIssuesItems li,
+#gpVisitsItems li,
+#hospitalVisitsItems li {
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+main h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Styling for Delete Buttons */
+button.delete {
+  background-color: #dc3545; /* Red button color */
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #c82333; /* Darker red on hover */
+}

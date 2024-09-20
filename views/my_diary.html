@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Diary</title>
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/my_diary.css" />
+  </head>
+  <body>
+    <!-- Navigation bar container -->
+    <div id="navbar-container" aria-live="polite"></div>
+
+    <header>
+      <h1>My Diary</h1>
+    </header>
+
+    <main>
+      <section>
+        <!-- Add a heading for the section to fix W3C checker warning-->
+        <h2>Diary Sections</h2>
+        <button onclick="location.href='falls.html'">Falls</button>
+        <button onclick="location.href='medical_issues.html'">
+          Medical Issues
+        </button>
+        <button onclick="location.href='gp_visits.html'">GP Visits</button>
+        <button onclick="location.href='hospital_visits.html'">
+          Hospital Visits
+        </button>
+        <button onclick="location.href='dentist_visits.html'">
+          Dentist Visits
+        </button>
+      </section>
+    </main>
+
+    <script src="/js/navbar_loader.js"></script>
+    <script src="/js/diary_form_handler.js"></script>
+  </body>
+</html>

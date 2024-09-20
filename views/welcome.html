@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/styles/welcome.css" />
+  </head>
+  <body class="welcome-page">
+    <!-- Navigation bar container -->
+    <div id="navbar-container" aria-live="polite"></div>
+    <header>
+      <h1>Welcome, <span id="username">User</span>!</h1>
+    </header>
+    <main>
+      <!-- Button container -->
+      <div class="button-container">
+        <a href="/user_details" class="button">Your Details</a>
+        <a href="/my_diary" class="button">My Diary</a>
+        <a href="/emergency_contact" class="button">Emergency Contact</a>
+        <a href="/doctors_contact" class="button">Doctor's Contact</a>
+        <a href="/medication_entry" class="button">Medication Entry</a>
+      </div>
+      <!-- Medication reminder container -->
+      <div id="reminderContainer"></div>
+
+      <!-- Upcoming visits will be displayed here -->
+      <div id="gpVisitsList"></div>
+      <div id="hospitalVisitsList"></div>
+      <div id="dentistVisitsList"></div>
+    </main>
+
+    <footer>
+      <a
+        href="/logout"
+        class="button logout-button"
+        onclick="return confirmLogout()"
+        >Logout</a
+      >
+    </footer>
+
+    <script src="/js/welcome.js"></script>
+  </body>
+</html>

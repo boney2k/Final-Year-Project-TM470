@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falls</title>
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/my_diary.css" />
+  </head>
+  <body id="falls">
+    <!-- Navigation bar container -->
+    <div id="navbar-container" aria-live="polite"></div>
+
+    <header>
+      <h1>Falls</h1>
+    </header>
+
+    <main>
+      <section>
+        <form id="fallsForm">
+          <label for="fallsDate">Date:</label>
+          <input
+            type="date"
+            id="fallsDate"
+            name="fallsDate"
+            required
+          /><br /><br />
+          <label for="fallsTime">Time:</label>
+          <input
+            type="time"
+            id="fallsTime"
+            name="fallsTime"
+            required
+          /><br /><br />
+          <label for="fallsDescription">Description:</label>
+          <textarea
+            id="fallsDescription"
+            name="fallsDescription"
+            required
+          ></textarea
+          ><br /><br />
+          <button type="submit">Add Fall</button>
+        </form>
+        <div id="fallsList">
+          <h3>Falls List</h3>
+          <ul id="fallsItems"></ul>
+        </div>
+      </section>
+      <!-- Back to My Diary Button -->
+      <button id="backToDiary">Back to My Diary</button>
+    </main>
+
+    <script src="/js/diary_form_handler.js"></script>
+  </body>
+</html>

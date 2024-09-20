@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor's Contact</title>
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/doctors_contact.css" />
+  </head>
+  <body>
+    <!-- Navigation bar container -->
+    <div id="navbar-container" aria-live="polite"></div>
+    <h1>Doctor's Contact</h1>
+    <!-- Form for adding or editing a doctor's or consultant's contact -->
+    <div id="doctor-contact-form">
+      <h2>Manage Doctor's or Consultant's Contact</h2>
+      <form id="doctorContactForm">
+        <label for="contactType">Contact Type:</label>
+        <select id="contactType" name="contactType" required>
+          <!-- Placeholder option for w3c html checker -->
+          <option value="" disabled selected>Select type</option>
+          <option value="Doctor">Doctor</option>
+          <option value="Consultant">Consultant</option>
+        </select>
+        <br /><br />
+
+        <label for="doctorName">Name:</label>
+        <input
+          type="text"
+          id="doctorName"
+          name="doctorName"
+          pattern="[A-Za-z\s]+"
+          title="Name should contain only letters and spaces"
+          required
+        />
+        <span id="nameError" class="error-message"></span>
+        <br /><br />
+
+        <label for="doctorAddress">Address:</label>
+        <input type="text" id="doctorAddress" name="doctorAddress" required />
+        <br /><br />
+
+        <label for="doctorTelephone">Telephone:</label>
+        <input
+          type="text"
+          id="doctorTelephone"
+          name="doctorTelephone"
+          pattern="\d{11}"
+          title="Telephone number must be exactly 11 digits"
+          required
+        />
+        <span id="telephoneError" class="error-message"></span>
+        <br /><br />
+
+        <label for="doctorEmail">Email:</label>
+        <input type="email" id="doctorEmail" name="doctorEmail" required />
+        <span id="emailError" class="error-message"></span>
+        <br /><br />
+
+        <button type="submit" id="submitDoctorButton">Add Contact</button>
+      </form>
+    </div>
+
+    <!-- Display list of doctor's contacts -->
+    <div id="doctorContactList">
+      <h3>Doctor's and Consultant's Contacts List</h3>
+      <ul id="doctorContactsItems"></ul>
+    </div>
+
+    <script src="/js/navbar_loader.js"></script>
+    <script src="/js/doctors_contact.js"></script>
+  </body>
+</html>

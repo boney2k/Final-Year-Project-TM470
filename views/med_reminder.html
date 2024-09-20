@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medication Collection Reminder</title>
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/med_reminder.css" />
+  </head>
+  <body>
+    <!-- Navigation bar container -->
+    <div id="navbar-container" aria-live="polite"></div>
+
+    <h1>Set Medication Collection Reminder</h1>
+    <form id="reminderForm">
+      <label for="initialDate">Initial Collection Date:</label>
+      <input
+        type="date"
+        id="initialDate"
+        name="initialDate"
+        required
+      /><br /><br />
+
+      <label for="frequency">Collection Frequency:</label>
+      <select id="frequency" name="frequency" required>
+        <!-- Placeholder option to fix W3C checker error-->
+        <option value="" disabled selected>Select frequency</option>
+        <option value="1">Every 1 week</option>
+        <option value="2">Every 2 weeks</option>
+        <option value="3">Every 3 weeks</option>
+        <option value="4">Every 4 weeks</option></select
+      ><br /><br />
+
+      <button type="submit">Save Reminder</button>
+    </form>
+
+    <script src="/js/navbar_loader.js"></script>
+    <script src="/js/med_reminder.js"></script>
+  </body>
+</html>

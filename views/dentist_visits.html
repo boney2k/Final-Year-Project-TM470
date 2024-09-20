@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dentist Visits</title>
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/my_diary.css" />
+  </head>
+  <body id="dentist-visits">
+    <!-- Navigation bar container -->
+    <div id="navbar-container" aria-live="polite"></div>
+
+    <header>
+      <h1>Dentist Visits</h1>
+    </header>
+
+    <main>
+      <section>
+        <form id="dentistVisitsForm">
+          <label for="dentistVisitsDate">Date:</label>
+          <input
+            type="date"
+            id="dentistVisitsDate"
+            name="dentistVisitsDate"
+            required
+          /><br /><br />
+          <label for="dentistVisitsTime">Time:</label>
+          <input
+            type="time"
+            id="dentistVisitsTime"
+            name="dentistVisitsTime"
+            required
+          /><br /><br />
+          <label for="dentistVisitsDescription">Description:</label>
+          <textarea
+            id="dentistVisitsDescription"
+            name="dentistVisitsDescription"
+            required
+          ></textarea
+          ><br /><br />
+          <button type="submit">Add Dentist Visit</button>
+        </form>
+        <div id="dentistVisitsList">
+          <h3>Dentist Visits List</h3>
+          <ul id="dentistVisitsItems"></ul>
+        </div>
+      </section>
+      <!-- Back to My Diary Button -->
+      <button id="backToDiary">Back to My Diary</button>
+    </main>
+
+    <script src="/js/diary_form_handler.js"></script>
+  </body>
+</html>

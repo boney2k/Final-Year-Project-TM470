@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Details</title>
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/user_details.css" />
+  </head>
+  <body class="user-details-page">
+    <div id="navbar-container" aria-live="polite"></div>
+    <!-- HTML content for displaying and editing user details -->
+    <div id="userDetails" role="main">
+      <h1 aria-label="Your personal details">Your Details</h1>
+      <div id="userDetailsContainer" aria-live="polite"></div>
+      <div
+        id="editFormContainer"
+        aria-labelledby="editFormHeader"
+        role="region"
+      >
+        <h2 id="editFormHeader">Edit Details</h2>
+        <form id="userDetailsForm" aria-describedby="errorContainer">
+          <div id="errorContainer" class="error" role="alert"></div>
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            aria-required="true"
+            aria-label="Enter your username"
+          /><br /><br />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-required="true"
+            aria-label="Enter your email address"
+          /><br /><br />
+
+          <label for="address">Address:</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            aria-label="Enter your address"
+          /><br /><br />
+
+          <label for="phone">Phone:</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            aria-label="Enter your phone number"
+          /><br /><br />
+
+          <button type="submit" id="updateUserButton">Update Details</button>
+          <button type="button" id="cancelEditButton">Cancel</button>
+        </form>
+      </div>
+      <button id="editButton" aria-label="Edit your details">Edit</button>
+    </div>
+
+    <script src="/js/navbar_loader.js"></script>
+    <script src="/js/user_details.js"></script>
+  </body>
+</html>

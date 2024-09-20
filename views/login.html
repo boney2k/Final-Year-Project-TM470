@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Login</title>
+    <link rel="stylesheet" href="/styles/login.css" />
+  </head>
+  <body class="login-page">
+    <header>
+      <h1 id="app-title">Carer App</h1>
+    </header>
+
+    <main>
+      <h2 id="login-heading">User Login</h2>
+
+      <!-- Screen reader will be notified of dynamic changes in this element -->
+      <div
+        id="messageContainer"
+        class="message-container"
+        aria-live="assertive"
+        role="status"
+        aria-atomic="true"
+      ></div>
+
+      <form action="/login" method="POST" aria-labelledby="login-heading">
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+            autocomplete="username"
+            aria-required="true"
+            aria-describedby="email-desc"
+          />
+          <span id="email-desc" class="sr-only"
+            >Format: example@domain.com</span
+          >
+        </div>
+        <br />
+        <div>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+            autocomplete="current-password"
+            aria-required="true"
+            aria-describedby="password-desc"
+          />
+          <span id="password-desc" class="sr-only">Password is required</span>
+        </div>
+        <br />
+        <button type="submit">Login</button>
+      </form>
+
+      <p>Don't have an account? <a href="/register">Register here</a>.</p>
+    </main>
+
+    <script src="/js/login.js"></script>
+  </body>
+</html>

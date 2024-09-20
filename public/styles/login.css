@@ -1,0 +1,124 @@
+/* public/styles/login.css */
+
+body.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.message-container {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.message {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.message.success {
+  color: green;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  color: red;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+p {
+  margin-top: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for Carer App title */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #007bff; /* Blue background */
+  width: 100%;
+}
+
+#app-title {
+  color: #fff;
+  font-size: 3em;
+  margin: 0;
+  padding: 10px 0;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 480px) {
+  #app-title {
+    font-size: 2.5em; /* Adjust font size for smaller screens */
+  }
+}
+
+h2#login-heading {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}

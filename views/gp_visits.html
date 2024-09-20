@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GP Visits</title>
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/my_diary.css" />
+  </head>
+  <body id="gp-visits">
+    <!-- Navigation bar container -->
+    <div id="navbar-container" aria-live="polite"></div>
+
+    <header>
+      <h1>GP Visits</h1>
+    </header>
+
+    <main>
+      <section>
+        <form id="gpVisitsForm">
+          <label for="gpVisitsDate">Date:</label>
+          <input
+            type="date"
+            id="gpVisitsDate"
+            name="gpVisitsDate"
+            required
+          /><br /><br />
+          <label for="gpVisitsTime">Time:</label>
+          <input
+            type="time"
+            id="gpVisitsTime"
+            name="gpVisitsTime"
+            required
+          /><br /><br />
+          <label for="gpVisitsDescription">Description:</label>
+          <textarea
+            id="gpVisitsDescription"
+            name="gpVisitsDescription"
+            required
+          ></textarea
+          ><br /><br />
+          <button type="submit">Add GP Visit</button>
+        </form>
+        <div id="gpVisitsList">
+          <h3>GP Visits List</h3>
+          <ul id="gpVisitsItems"></ul>
+        </div>
+      </section>
+      <!-- Back to My Diary Button -->
+      <button id="backToDiary">Back to My Diary</button>
+    </main>
+
+    <script src="/js/diary_form_handler.js"></script>
+  </body>
+</html>

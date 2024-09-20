@@ -1,0 +1,62 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Burger menu styles */
+.burger-menu {
+  position: relative;
+}
+
+.burger-menu input[type="checkbox"] {
+  display: none;
+}
+
+.burger-menu label {
+  display: block;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+}
+
+.burger-menu .nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  background-color: #007bff;
+}
+
+.burger-menu .nav-links li {
+  text-align: center;
+  padding: 10px;
+}
+
+.burger-menu .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.burger-menu input[type="checkbox"]:checked + label + .nav-links {
+  display: block;
+}
+
+/* Global page styles */
+h1 {
+  color: #333;
+  margin: 20px 0;
+  text-align: center;
+}

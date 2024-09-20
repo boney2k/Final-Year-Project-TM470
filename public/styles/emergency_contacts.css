@@ -1,0 +1,112 @@
+/* Styles for the Emergency Contact page */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#contacts {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #555;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 0.875em;
+}
+
+#contactList {
+  margin-top: 20px;
+}
+
+#contactsItems {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.contact-type,
+.contact-name,
+.contact-home-phone,
+.contact-work-phone,
+.contact-mobile-phone,
+.contact-email {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-actions {
+  margin-top: 10px;
+}
+
+.contact-actions button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-actions button:hover {
+  opacity: 0.8;
+}
+
+.delete-button {
+  background-color: #f44336; /* Red color */
+  color: white;
+}

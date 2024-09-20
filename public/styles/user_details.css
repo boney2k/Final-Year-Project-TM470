@@ -1,0 +1,93 @@
+/* Styles specific to the User Details page */
+.user-details-page {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+#userDetails {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#userDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#userDetailsContainer p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+#userDetailsContainer p span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+#editFormContainer {
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  font-size: 18px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 18px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 0.875em;
+  margin-bottom: 20px;
+}
